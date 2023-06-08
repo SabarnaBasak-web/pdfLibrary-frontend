@@ -10,7 +10,6 @@ const LibrarySection = () => {
     if (allBooks.status === 200) {
       const result = await allBooks.json();
       if (result.length) setBookList(result);
-      console.log("All books", result);
     }
   };
 
